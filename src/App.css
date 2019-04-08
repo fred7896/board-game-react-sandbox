@@ -5,18 +5,34 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /*background-color: #20211E;*/
+    
 }
 
 .mouah {
     text-align: center;
-    background-color: #20211E;
     color: #D6F788;
 }
 
 .pawn {
-    width: 125px;
-    height: 125px;
-    margin: 1em;
+    min-width: 10vw;
+    min-height: 10vh;
+    max-width: 70%;
+    margin: auto;
+    border: 1px solid #D6F788;
+    cursor: pointer;
+}
+
+.pawn:hover {
+    border: 5px solid #D6F788;
+}
+
+.pawn-select {
+    min-width: 10vw;
+    min-height: 10vh;
+    max-width: 70%;
+    margin: auto;
+    border: 1px solid #D6F788;
 }
 
 .team-list {
@@ -25,4 +41,37 @@
     justify-content: center;
     align-items: center;
     list-style-type: none; 
+    padding-left: 0;
 }
+
+.players {
+    display: flex;
+    justify-content: space-around;
+}
+
+.starter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.start-button {
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    width: 35%;
+    border: 1px solid #D6F788;
+    color: #D6F788;
+    font-size: 2em;
+    background-color: black;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    border: 1px solid #D6F788;
+    color: black;
+    font-weight: bold;
+    background-color: #D6F788;
+}
+
+
