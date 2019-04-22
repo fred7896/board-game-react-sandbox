@@ -11,7 +11,7 @@ class PlayerSelect extends Component {
 
     setPlayer = (team) => {
         if (this.state.players.find(player => player.team === team)) {
-            alert('Nope, team already selected');
+            alert('Nope, team already selected, mind the cat !');
             window.open('https://www.youtube.com/watch?v=16J7KiZmnJA','_blank');
         } else {
             this.setState((prevState) => ({
