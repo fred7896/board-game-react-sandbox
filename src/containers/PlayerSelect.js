@@ -34,7 +34,7 @@ class PlayerSelect extends Component {
 
     render() {
         return (
-            <div>
+            <div className="d-flex justify-content-center flex-column playerSelect">
                     <Players players = {this.state.players}/>
                 {
                     this.state.readyToStart ?

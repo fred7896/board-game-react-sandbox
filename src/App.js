@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import PlayerSelect from './containers/PlayerSelect';
-import GameBoard from './containers/GameBoard';
+import Game from './containers/Game';
 import Players from './components/Players';
 
 class App extends Component {
@@ -22,7 +22,7 @@ class App extends Component {
       <Players players = {this.state.players} />
       {
         this.state.gameStarted ? 
-        <GameBoard players = {this.state.players} /> :
+        <Game players = {this.state.players} /> :
         <PlayerSelect startGame={this.startGame}/>
       }
       </div>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Square from "../components/Square";
+import Square from "./Square";
 
 class GameBoard extends Component {
   constructor(props) {
@@ -12,9 +12,9 @@ class GameBoard extends Component {
 
   componentDidMount() {
     // Generate Board and state
-    //const player_1 = players[0];
-    //const player_2 = players[1];
-    //const { players: [player_1, player_2] } = this.props;
+    // const player_1 = players[0];
+    // const player_2 = players[1];
+    // const { players: [player_1, player_2] } = this.props;
 
     //const squares = [];
   }
@@ -60,22 +60,22 @@ class GameBoard extends Component {
     ];
     let squareBackground = tileSet[0];
     let gameMap = [
-      0,0,0,0,0,0,0,0,0,0,0,0,0,
-      0,5,1,1,1,1,9,1,1,1,1,7,0,
-      0,3,0,0,0,0,10,0,0,0,0,4,0,
-      0,3,1,25,0,15,13,16,0,23,1,4,0,
-      0,3,0,10,0,17,12,18,0,10,0,4,0,
-      0,3,2,26,0,19,14,20,0,24,2,4,0,
-      0,3,0,0,0,0,10,0,0,0,0,4,0,
-      0,6,2,2,2,2,11,2,2,2,2,8,0,
-      0,0,0,0,0,0,0,0,0,0,0,0,0
+        0,0,0,0,0,0,0,0,0,0,0,0,0,
+        0,5,1,1,1,1,9,1,1,1,1,7,0,
+        0,3,0,0,0,0,10,0,0,0,0,4,0,
+        0,3,1,25,0,15,13,16,0,23,1,4,0,
+        0,3,0,10,0,17,12,18,0,10,0,4,0,
+        0,3,2,26,0,19,14,20,0,24,2,4,0,
+        0,3,0,0,0,0,10,0,0,0,0,4,0,
+        0,6,2,2,2,2,11,2,2,2,2,8,0,
+        0,0,0,0,0,0,0,0,0,0,0,0,0
     ];
     //let i = 0;
     //const coord = indexToCoord(gameMap[i]);
 
     return (
-        <div className="row board mt-3 mb-3">
-          {gameMap.map(e => {
+        <div className="board mt-3 mb-3">
+            {gameMap.map(e => {
         switch (e) {
             case 0:
                 //row-1-col-1.png";
@@ -190,13 +190,13 @@ class GameBoard extends Component {
                 squareBackground = tileSet[0];
             }
             return (
-              
+            
             <Square imgSrc={squareBackground} />
                 
             );
-          })}
+        })}
         </div>
     );
-  }
+    }
 }
 export default GameBoard;

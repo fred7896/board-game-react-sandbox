@@ -5,49 +5,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*background-color: #20211E;*/
     
 }
 
-.mouah {
-    text-align: center;
-    color: #D6F788;
-}
 
-.pawn {
-    min-width: 10vw;
-    min-height: 10vh;
-    max-height: 10vh;
-    max-width: 70%;
-    margin: auto;
-    border: 1px solid #D6F788;
-    cursor: pointer;
-}
 
-.pawn:hover {
-    border: 5px solid #D6F788;
-}
 
-.pawn-select {
-    min-width: 10vw;
-    min-height: 10vh;
-    max-width: 70%;
-    margin: auto;
-    border: 1px solid #D6F788;
-}
+/* PLAYER SELECT */
 
-.team-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none; 
-    padding-left: 0;
-}
-
-.players {
-    display: flex;
-    justify-content: space-around;
+.playerSelect {
+    width: 70vw;
 }
 
 .starter {
@@ -55,8 +22,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
+
+.mouah {
+    text-align: center;
+    color: #D6F788;
+}
+
 .start-button {
     text-align: center;
     font-family: 'Bangers', cursive;
@@ -75,6 +47,72 @@
     background-color: #D6F788;
 }
 
+.team-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none; 
+    padding-left: 0;
+}
+
+.pawn {
+    min-width: 10vw;
+    min-height: 10vh;
+    max-height: 10vh;
+    max-width: 70%;
+    margin: auto;
+    border: 1px solid #D6F788;
+    cursor: pointer;
+}
+
+.pawn:hover {
+    border: 5px solid #D6F788;
+}
+
+/* PLAYERS */
+
+.players {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pawn-select {
+    width: 25vw;
+    border: 1px solid #D6F788;
+    
+}
+
+img.pawn-select {
+    max-width: 250px;
+}
+
+
+/* GAME */
+
+.game {
+    width: 70vw;
+}
+
+.game-board {
+    width: 100%;
+    
+}
+
+.game-info {
+    height: 50px;
+}
+
+/* GAMEBOARD */
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(13,1fr);
+
+}
+
+/* SQUARE */
+
 .square {
     margin:0;
     padding: 0;
@@ -85,9 +123,12 @@
     align-items: center;
 }
 
-.board {
-    width: 858px;
-    height: 576px;
+.square:hover {
+    border: 3px solid rgba(242, 245, 54, 0.9);;
+}
+
+.square img {
+    width: 100%;
 }
 
 .yep {
@@ -95,3 +136,6 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+
+
